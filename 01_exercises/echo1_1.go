@@ -1,4 +1,4 @@
-// Echo3 prints its command-line arguments.
+// Echo program print os.Args[0]
 package main
 
 import (

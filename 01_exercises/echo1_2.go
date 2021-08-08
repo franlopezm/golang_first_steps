@@ -1,4 +1,4 @@
-// Echo2 prints its command-line arguments.
+// Echo program print index and value, one per line
 package main
 
 import (
