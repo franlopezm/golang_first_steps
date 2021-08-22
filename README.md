@@ -27,6 +27,14 @@ Solutions to the exercises included in the book. **DD** indicates the chapter of
 
   `go run main.go text1.txt text2.txt text3.txt text4.txt`
 
+- **[1_5_animated_gif](https://github.com/franlopezm/golang_first_steps/tree/main/01_exercises/1_5_animated_gif)**, Create a green gif.
+
+  `go run main.go > out.gif`
+
+- **[1_6_animated_gif](https://github.com/franlopezm/golang_first_steps/tree/main/01_exercises/1_6_animated_gif)**, Produce images in multiple colors.
+
+  `go run main.go > out.gif`
+
 
 ---
 
