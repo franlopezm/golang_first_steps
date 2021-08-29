@@ -35,7 +35,17 @@ Solutions to the exercises included in the book. **DD** indicates the chapter of
 
   `go run main.go > out.gif`
 
+- **[1_7_fetch](https://github.com/franlopezm/golang_first_steps/tree/main/01_exercises/1_7_fetch)**, Fetching a URL.
 
+  `go run main.go https://wikipedia.org`
+
+- **[1_8_fetch](https://github.com/franlopezm/golang_first_steps/tree/main/01_exercises/1_8_fetch)**, Fetching a URL, and add prefix "https://".
+
+  `go run main.go wikipedia.org`
+
+- **[1_9_fetch](https://github.com/franlopezm/golang_first_steps/tree/main/01_exercises/1_9_fetch)**, Fetching a URL and print HTTP status code.
+
+  `go run main.go wikipedia.org`
 ---
 
 ## Commands
