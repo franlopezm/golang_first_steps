@@ -46,6 +46,10 @@ Solutions to the exercises included in the book. **DD** indicates the chapter of
 - **[1_9_fetch](https://github.com/franlopezm/golang_first_steps/tree/main/01_exercises/1_9_fetch)**, Fetching a URL and print HTTP status code.
 
   `go run main.go wikipedia.org`
+
+- **[1_10_fetch_concurrently](https://github.com/franlopezm/golang_first_steps/tree/main/01_exercises/1_10_fetch_concurrently)**, Fetching URLs concurrently and write results in a file.
+
+  `go run main.go https://es.wikipedia.org https://golang.org https://es.wikipedia.org/wiki/Universo_cinematogr%C3%A1fico_de_Marvel`
 ---
 
 ## Commands
