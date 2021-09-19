@@ -1,7 +1,6 @@
 // Lissajous function.
 package main
 
-// Animated GIFs, Lissajous generates Gif animations of random Lissajous figures.
 import (
 	"image"
 	"image/color"
