@@ -1,4 +1,4 @@
-## 01 Tutotial
+## 01 Tutorial
 [Go Back](https://github.com/franlopezm/golang_first_steps/blob/main/README.md)
 
 - **[1_1_echo](https://github.com/franlopezm/golang_first_steps/tree/main/01_exercises/1_1_echo)**, prints on screen the arguments passed when calling the function.
