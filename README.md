@@ -11,7 +11,7 @@ Solutions to the exercises included in the book. **DD** indicates the chapter of
 > All exercises must be run from its folder.
 
 - [01 Tutorial](https://github.com/franlopezm/golang_first_steps/tree/main/01_exercises/01_exercises.md)
-- [02 Program Structure](https://github.com/franlopezm/golang_first_steps/tree/main/01_exercises/01_exercises.md)
+- [02 Program Structure](https://github.com/franlopezm/golang_first_steps/tree/main/01_exercises/02_exercises.md)
 
 ---
 
