@@ -8,60 +8,21 @@ Contains the implementation of the examples in the book. They are all organized 
 ### DD_exercises
 Solutions to the exercises included in the book. **DD** indicates the chapter of the book to which the exercises belong.
 
-> All exercises must be run from your folder.
+> All exercises must be run from its folder.
 
-#### Tutotial (01_exercises)
-- **[1_1_echo](https://github.com/franlopezm/golang_first_steps/tree/main/01_exercises/1_1_echo)**, prints on screen the arguments passed when calling the function.
+- [01 Tutotial](https://github.com/franlopezm/golang_first_steps/tree/main/01_exercises/01_exercises.md)
+- [02 Program Structure](https://github.com/franlopezm/golang_first_steps/tree/main/01_exercises/01_exercises.md)
 
-  `go run main.go Hello 230 ups "Be careful"`
-
-- **[1_1_echo](https://github.com/franlopezm/golang_first_steps/tree/main/01_exercises/1_2_echo)**, prints on screen the arguments passed when calling the function, and its index.
-
-  `go run main.go Hello 230 ups "Be careful"`
-
-- **[1_3_echo](https://github.com/franlopezm/golang_first_steps/tree/main/01_exercises/1_3_echo)**, benchmark running time between our potentially inefficient versions and the one that uses strings.Join.
-
-  `go run main.go Hello 230 ups "Be careful"`
-
-- **[1_4_dup](https://github.com/franlopezm/golang_first_steps/tree/main/01_exercises/1_4_dup)**, find duplicate lines and print names of all files in which each duplicated line occurs.
-
-  `go run main.go text1.txt text2.txt text3.txt text4.txt`
-
-- **[1_5_animated_gif](https://github.com/franlopezm/golang_first_steps/tree/main/01_exercises/1_5_animated_gif)**, Create a green gif.
-
-  `go run main.go > out.gif`
-
-- **[1_6_animated_gif](https://github.com/franlopezm/golang_first_steps/tree/main/01_exercises/1_6_animated_gif)**, Produce images in multiple colors.
-
-  `go run main.go > out.gif`
-
-- **[1_7_fetch](https://github.com/franlopezm/golang_first_steps/tree/main/01_exercises/1_7_fetch)**, Fetching a URL.
-
-  `go run main.go https://wikipedia.org`
-
-- **[1_8_fetch](https://github.com/franlopezm/golang_first_steps/tree/main/01_exercises/1_8_fetch)**, Fetching a URL, and add prefix "https://".
-
-  `go run main.go wikipedia.org`
-
-- **[1_9_fetch](https://github.com/franlopezm/golang_first_steps/tree/main/01_exercises/1_9_fetch)**, Fetching a URL and print HTTP status code.
-
-  `go run main.go wikipedia.org`
-
-- **[1_10_fetch_concurrently](https://github.com/franlopezm/golang_first_steps/tree/main/01_exercises/1_10_fetch_concurrently)**, Fetching URLs concurrently and write results in a file.
-
-  `go run main.go https://es.wikipedia.org https://golang.org https://es.wikipedia.org/wiki/Universo_cinematogr%C3%A1fico_de_Marvel`
-
-- **[1_12_server_lissajous](https://github.com/franlopezm/golang_first_steps/tree/main/01_exercises/1_12_server_lissajous)**, The Lissajous server, read parameter values from the URL query.
-
-  `go run main.go`
 ---
 
 ## Commands
 
 - Run `go run FILE_NAME`
 - Compile `go build FILE_NAME`
+- Create a module `go mod init MODULE_NAME`, MODULE_NAME must be unique or the same project name.
+- Download project dependencies `go mod tidy`
 
-## package ftm
+## Package ftm
 ### Printf
   - `%d`                decimal integer
   - `%x`, `%o`, `%b`    integer in hexadecimal, octal, binary
@@ -73,3 +34,34 @@ Solutions to the exercises included in the book. **DD** indicates the chapter of
   - `%v`                any value in a natural format
   - `%T`                type of any value
   - `%%`                literal percent sign (no operand)
+
+---
+
+## Program structure
+### Variable
+#### Basic declarations
+`var name type = expression`
+
+- **Omit type**, `var name = expression`. Type is determinated by the initializer expression.
+- **Omit expression**, `var name type`. Initial value is:
+  - 0 for numbers.
+  - false for booleans.
+  - "" for strings.
+  - nil for interfaces, reference types (slice, pointer, map, channel, function).
+- **Declaration of multile variables**:
+  - `var i, j, k int`
+  - `var b, f, s = true, "Hello", 3.98`. bool, string, float64
+
+#### Short declarations
+`name := expression`
+
+#### Pointers
+A pointer values is the address of a variable. Example:
+
+```go
+x := 1
+p := &x         // p, of type *int, points to x
+fmt.Println(*p) // 1
+*p = 2          // equivalent to x = 2
+fmt.Println(x)  // 2
+```
