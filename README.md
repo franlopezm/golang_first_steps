@@ -12,6 +12,7 @@ Solutions to the exercises included in the book. **DD** indicates the chapter of
 
 - [01 Tutorial](https://github.com/franlopezm/golang_first_steps/tree/main/01_exercises/01_exercises.md)
 - [02 Program Structure](https://github.com/franlopezm/golang_first_steps/tree/main/02_exercises/02_exercises.md)
+- [03 Basic Data Types](https://github.com/franlopezm/golang_first_steps/tree/main/03_exercises/03_exercises.md)
 
 ---
 
@@ -65,3 +66,32 @@ fmt.Println(*p) // 1
 *p = 2          // equivalent to x = 2
 fmt.Println(x)  // 2
 ```
+
+---
+
+## Data Types
+### Integers
+- Signed integers: `int8, int16, int32 and int32` or `int`
+- Unsigned integers: `uint8, uint16, uint32 and uint32` or `uint`
+- `rune` is a synonym for **int32**
+- `byte` is a synonym for **uint8**
+- `uintptr` type is used only for low-level programming
+
+#### Binary operators
+- `* / % << >> & &^`
+- `+ - | ^`
+- `== != < <= > >=`
+- `&&`
+- `||`
+
+#### Bitwise binary operators
+- `&`, bitwise AND
+- `|`, bitwise OR
+- `^`, bitwise XOR
+- `&^`, bit clear (AND NOT)
+- `<<`, left shift
+- `>>`, right shift
+
+
+### Floating-Point
+- `float32 and float64`
